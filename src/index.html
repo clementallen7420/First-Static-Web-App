@@ -6,26 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Development Branch App2</title>
-  <script>
-  async function query(data) {
-    const response = await fetch(
-        "http://52.191.34.63:3000/api/v1/prediction/26351c93-58d5-43a2-ab79-ad2fa8f5fce8",
-        {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        }
-    );
-    const result = await response.json();
-    return result;
-}
-
-query({"question": "Hey, how are you?"}).then((response) => {
-    console.log(response);
-});
-</script>
+  
 </head>
 
 <body>
